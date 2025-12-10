@@ -20,7 +20,7 @@ if (num > 0) {
 
 const age = 16;
 if (age<18){
-  console.log('Доступ запрещен');
+ console.log('Доступ запрещен');
 }else {
   console.log('Добро пожаловать');
 }
@@ -136,7 +136,7 @@ switch (day) {
     console.log('Четверг');
     break;
     case 5:
-    console.log('Пятница');
+   console.log('Пятница');
     break;
     case 6:
     console.log('Суббота');
@@ -150,9 +150,13 @@ switch (day) {
 //Создай константу color cо значением "red" или "yellow" или "green", в консоль выводи:
  // - Стоп / Жди / Езжай.
 
- const color = 'red' || 'yellow' || 'green';
+ const color = red;
  switch(color){
-  case color :console.log('ПОДОЖДИ' || 'СТОП' || 'ЕЗЖАЙ');
+case red:
+  console.log('СТОП');
+  case yellow:
+    console.log('ПОДОЖДИ');
+  case green:console.log('СТОП');
  }
 
  
@@ -163,38 +167,23 @@ switch (day) {
 const month = 7;
 switch(month){
 case 1:
-console.log('зима');
-break;
 case 2:
+case 12:
 console.log('зима');
 break;
 case 3:
-console.log('весна');
-break;
 case 4:
-console.log('весна');
-break;
 case 5:
 console.log('весна');
 break;
 case 6:
-console.log('лето');
-break;
 case 7:
-console.log('лето');
-break;
 case 8:
 console.log('лето');
 break;
 case 9:
-console.log('осень');
-break;
 case 10:
-console.log('осень');
-break;
 case 11:
 console.log('осень');
-break;
-case 12:
-console.log('зима');
+break;  
 }
