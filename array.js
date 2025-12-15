@@ -29,19 +29,21 @@ console.log(dress);
 
 //Задание люкс
 
-const  product = ['Мука' , 'Одежда' , 'Молоко' , 'Хлеб'];
+const  products = ['Мука' , 'Одежда' , 'Молоко' , 'Хлеб'];
 const result = (product) => {
-  const bread = product.indexOf('Хлеб ')
-if (bread !==  -1) {
-  product.splice(bread , 4);
-  console.log('удален');
-} else {
-  console.log('не удален');
-  product.push('Хлеб')
-return product;
-}  
+  const bread = product.indexOf('Хлеб');
+
+  if (bread !== -1) {
+    product.splice(bread , 4);
+    console.log('удален');
+  } else {
+    console.log('не удален');
+    product.push('Хлеб')
+  }  
+
+  return product;
 };                                
-console.log( result (product));
+console.log( result(products));
 
 //Задание 6
 
@@ -97,8 +99,8 @@ wordNumber.forEach(function(items){
 
 //
 
-const names = ['Ваня' , 'Леша' , 'Валя' , 'Женя'];
-names.forEach (names => {
+const names1 = ['Ваня' , 'Леша' , 'Валя' , 'Женя'];
+names1.forEach(names => {
 console.log(`Привет ${names}`);
 })
 
@@ -106,7 +108,7 @@ console.log(`Привет ${names}`);
 
 const price = ['120' , '324' , '34' , '21'];
 let forSum = 0;
-price.forEach (prices => {
+price.forEach(prices => {
 forSum += prices;
 })
 console.log(`Общая сумма всех цен ${forSum}`);
@@ -114,31 +116,38 @@ console.log(`Общая сумма всех цен ${forSum}`);
 //
 
 const km = ['1','45', '6' ,'9'];
-km.forEach (km => {
+km.forEach(km => {
   console.log(`Скорость ${km}`);
 })
 
 //
 
 const a = ['1' , '2' , '3' , '4'];
-const b = a.map(c =>{(
-  c + 1);
-return b ;
-})
+const b = a.map(c =>(
+  c + 1
+));
 console.log(b);
 
 const stroka = ['мишка' , ' кожура' ,'Апельсин'];
-const new = stroka.map (al => al.length);
-console.log(new);
+const news = stroka.map(al => al.length);
+console.log(news);
 
 
 
 const names = ['Ваня' , 'Леша' , 'Валя' , 'Женя'];
-const nexName = names.map  (p => {
-console.log(`Привет ${nexName}`);
+const nexName = names.map(p => {
+console.log(`Привет ${p}`);
 })
 
 
-const summa = ['46' , ' 70 ' ,'258'];
-const newSum = summa.map (al => al + 0.10);
-console.log(newSum);
+const summa = [46 ,  70 , 258];
+const newSum = summa.map(al => al + (al * 0.10));
+
+console.log(summa, newSum);
+
+const d = [true , false , true];
+const f = d.map((bool) => (
+  bool === true ? 'да' : 'нет'
+))
+
+console.log(f);
