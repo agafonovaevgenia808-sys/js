@@ -87,17 +87,22 @@ wordNumber.forEach(function(item){
   console.log(item);
 })
 
+
+//
 const wordNumbers = ['1' , '2' , '3' , '4'];
 wordNumber.forEach(function(items){
   const results = items * 2
   console.log(results);
 })
 
+//
 
 const names = ['Ваня' , 'Леша' , 'Валя' , 'Женя'];
 names.forEach (names => {
 console.log(`Привет ${names}`);
 })
+
+//
 
 const price = ['120' , '324' , '34' , '21'];
 let forSum = 0;
@@ -106,8 +111,34 @@ forSum += prices;
 })
 console.log(`Общая сумма всех цен ${forSum}`);
 
+//
 
 const km = ['1','45', '6' ,'9'];
 km.forEach (km => {
   console.log(`Скорость ${km}`);
 })
+
+//
+
+const a = ['1' , '2' , '3' , '4'];
+const b = a.map(c =>{(
+  c + 1);
+return b ;
+})
+console.log(b);
+
+const stroka = ['мишка' , ' кожура' ,'Апельсин'];
+const new = stroka.map (al => al.length);
+console.log(new);
+
+
+
+const names = ['Ваня' , 'Леша' , 'Валя' , 'Женя'];
+const nexName = names.map  (p => {
+console.log(`Привет ${nexName}`);
+})
+
+
+const summa = ['46' , ' 70 ' ,'258'];
+const newSum = summa.map (al => al + 0.10);
+console.log(newSum);
