@@ -6,7 +6,7 @@ console.log(numbers);
 
 const word = ['волосы','озон','картоха','мир'];
 const words = word.filter(b =>{
-  return b.length <= 4;
+  return b.length > 4;
 })
 console.log(words);
 
@@ -17,9 +17,9 @@ const old = age.filter( c =>{
 console.log(old);
 
 
-const name = ['ваня','маша','алиса','петя','афгустина'];
-const newName = name.filter(d =>{
-  return d == 'a';
+const name1 = ['ваня','маша','алиса','петя','афгустина'];
+const newName = name1.filter(d =>{
+  return d[0] === 'а';
 })
 console.log(newName);
 
