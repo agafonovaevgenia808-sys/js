@@ -7,7 +7,7 @@ const name1 = names.find(el => el === 'лена');
 console.log(name1);
 
 const colors = ['фиолетовый','розовый','серый','красный'];
-const color = colors.find(el => el === el.length[5]);
+const color = colors.find(el => el.length === 5);
 console.log(color);
 
 const numbers1 = [1,123,72,167,13];
@@ -15,6 +15,6 @@ const number1 = numbers1.find(el => el < 100);
 console.log(number1);
 
 const username = ['operator','job','admin'];
-const users = username.filter(el => el === 'admin');
-console.log(username[2]);
+const users = username.filter(el => el.startsWith('admin'));
+console.log(users);
 
