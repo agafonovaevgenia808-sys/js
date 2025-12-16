@@ -3,8 +3,6 @@ const [...rest]=numbers;
 console.log(rest);
 
 
-
-
 const number = [ 1 ,2 ,3 ,4];
 const [one , ...others] = number;
 console.log(one , others);
