@@ -31,3 +31,27 @@ const object = {
 }
 console.log(object);
 
+
+const user3 = {
+  username3: 'Ваня',
+  surname3:'Козлов',
+  age3: 17
+};
+console.log(user.age3);
+console.log(user['Ваня']);
+
+
+const word = {
+  number: 899927,
+  job: 'Сантехник'
+};
+
+console.log('Сантехник');
+
+
+const word1 = {
+  number1: 899927,
+  job1: 'Сантехник'
+};
+
+console.log(word1.names);
