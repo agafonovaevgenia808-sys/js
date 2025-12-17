@@ -55,3 +55,27 @@ const word1 = {
 };
 
 console.log(word1.names);
+
+//const passport1 = {
+  //usName: 'Anna'
+  //sarTisc() {
+   // console.log (this.usName);
+  //}
+//};
+//passport1.sarTisc();//
+
+const users1 = {
+  names21:'Иван',
+  newName() {
+    console.log(this.names21);
+  }
+};
+users1.newName();
+
+const user42 = {
+  name: 'Апельсин'
+};
+user42.greet = function() {
+  console.log('Привет' + this.name);
+};
+user.greet();
