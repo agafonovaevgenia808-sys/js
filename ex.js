@@ -80,27 +80,37 @@
 //};
 //user.greet();
 
+//const user = {
+  //name:'фантик',
+  //age: 45
+//}
+//console.log(Object.keys(user));
+//console.log(Object.keys(user).length);
+
+//const number = {
+  //a:12 , 
+  //c:12,
+  //b:293
+//}
+
+//const sum = number.reduce((el ,ac) =>{
+//return el =+ ac;
+//},0)
+//console.log(sum);
+
+
+
+//const numbers = { a:12 , c:12 , b:293 };
+//const copy = { ...numbers };
+
+//console.log(copy);
+
 const user = {
-  name:'фантик',
-  age: 45
+  name:'Ivan',
+  age:201
 }
 console.log(Object.keys(user));
+console.log(Object.values(user));
 console.log(Object.keys(user).length);
-
-const number = {
-  a:12 , 
-  c:12,
-  b:293
-}
-
-const sum = number.reduce((el ,ac) =>{
-return el =+ ac;
-},0)
-console.log(sum);
-
-
-
-const numbers = { a:12 , c:12 , b:293 };
-const copy = { ...numbers };
-
-console.log(copy);
+const proverka = Object.values(user).includes('Ivan');
+console.log(proverka);
